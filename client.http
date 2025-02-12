@@ -21,3 +21,33 @@ Content-Type: application/json
 ### Sign Out
 POST {{baseURL}}/auth/sign-out
 Content-Type: application/json
+
+### Create Meal
+POST {{baseURL}}/meals
+Content-Type: application/json
+
+{
+    "name": "Hamburguer",
+    "description": "I can't eat hamburguer anymore this weak.",
+    "healthy": false
+}
+
+### Get Meals
+GET {{baseURL}}/meals
+
+### Get Meal
+GET {{baseURL}}/meals/2
+
+### Update Meal
+PUT {{baseURL}}/meals/1
+Content-Type: application/json
+
+{
+    "name": "Hamburguer",
+    "description": "I can't eat hamburguer anymore this weak.",
+    "healthy": true
+}
+
+### Delete Meal
+DELETE {{baseURL}}/meals/1
+
