@@ -1,0 +1,23 @@
+@baseURL = http://localhost:5000
+
+### Create User Account
+POST {{baseURL}}/auth/sign-up
+Content-Type: application/json
+
+{
+    "email": "pedro.veber@outlook.com",
+    "password": "123456"
+}
+
+### Sign In
+POST {{baseURL}}/auth/sign-in
+Content-Type: application/json
+
+{
+    "email": "pedro.veber@outlook.com",
+    "password": "123456"
+}
+
+### Sign Out
+POST {{baseURL}}/auth/sign-out
+Content-Type: application/json
